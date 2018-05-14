@@ -8,7 +8,7 @@ public class CarregaMenu : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		//if (Input.GetKeyDown (KeyCode.C))
+		
 		timeLeft -= Time.deltaTime;
 		if(timeLeft < 0)
 		{

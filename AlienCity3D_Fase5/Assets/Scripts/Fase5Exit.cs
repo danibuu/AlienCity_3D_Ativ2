@@ -18,12 +18,12 @@ public class Fase5Exit : MonoBehaviour {
     {
         if (other.CompareTag("Player") && mng.colectDiamondsControl0 != mng.colectDiamondsControl1)
         {
-			mng.setaTexto("Apenas humanos podem passar! Coletar todos os diamantes");
+			mng.setaTexto("Só humanos podem passar! Colete os diamantes");
 			Invoke("limpaTexto", 6f);
         }
         else
         {
-			mng.setaTexto("Parabéns! Você venceu!!");
+			mng.setaTexto("Parabéns! Você voltou a ser humano!!");
             Invoke("carregaCena", 6);
         }
     }

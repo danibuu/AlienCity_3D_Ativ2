@@ -38,7 +38,7 @@ public class PlayerDamage : MonoBehaviour {
 	void Update () {
         if (HP < 0 && !isDead)
         {
-            //canDamage = false;
+            
             HP = 0;
             isDead = true;
             die();

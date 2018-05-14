@@ -25,7 +25,7 @@ public class insertKeys : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            texto.text = "Pressione 'F' para inserir as chaves.";
+            texto.text = "Pressione 'G' para inserir as chaves.";
             Gerenciador.canDoAction = true;
             Invoke("desativaTexto", 5);
         }

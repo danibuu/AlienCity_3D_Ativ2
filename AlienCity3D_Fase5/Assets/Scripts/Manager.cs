@@ -28,28 +28,28 @@ public class Manager : MonoBehaviour {
     public GameObject som;
     public GameObject som2;
 
+
+	public GameObject HudAlienCicy;
+
     // Use this for initialization
     void Start () {
         Diamonds = GameObject.FindGameObjectsWithTag("pedra");
         colectDiamondsControl0 = Diamonds.Length;
         halfColor = keyverde.color;
         key = GameObject.FindGameObjectsWithTag("key");
-        exitText.text = "Utilize as teclas: A, S, D e W ou o Mouse para se movimentar! Utilize o espaço para pular!";
-        Invoke("removeTexto", 6);
-
+        
+		HudAlienCicy.SetActive(false);
         
 	}
 
-    void removeTexto()
-    {
-        exitText.text = "";
-    }
+    
 	
 	// Update is called once per frame
 	void Update () {
         inserirChaves = keylogger.GetComponent<insertKeys>();
 
-        if (Input.GetKeyDown(KeyCode.F))
+		//Pressine a tecla G para abrir  porta
+		if (Input.GetKeyDown(KeyCode.G))
         {
             if (canDoAction)
             {

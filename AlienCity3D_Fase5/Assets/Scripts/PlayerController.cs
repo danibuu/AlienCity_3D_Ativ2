@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour {
 	protected Vector3 move = Vector3.zero;
 	private bool jump = false;
     public GameObject jumpSound;
-  
+
+	  
     void Start()
 	{
         cc = GetComponent<CharacterController> ();
